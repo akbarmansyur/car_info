@@ -99,7 +99,7 @@ class BleController extends GetxController {
   final String targetServiceUUID =
       "0000ffff-0000-1000-8000-00805f9b34fb"; // UUID layanan
   final String notifyCharacteristicUUID =
-      "0000fff2-0000-1000-8000-00805f9b34fb"; // UUID karakteristik notify
+      "0000fff1-0000-1000-8000-00805f9b34fb"; // UUID karakteristik notify
 
   Future scanDevice() async {
     if (await Permission.bluetoothScan.request().isGranted) {
